@@ -5,6 +5,11 @@ on:
     branches-ignore:
       - master
       - MOODLE_[0-9]+_STABLE
+      - Force_User_Login_1
+      - Strong_Password_2
+      - Resolve_Category_Course_Upload_3
+      - Course_Progress_Bar_4
+      - Regex_Answer_Question_Type_5
     tags-ignore:
       - v[0-9]+.[0-9]+.[0-9]+*
 
