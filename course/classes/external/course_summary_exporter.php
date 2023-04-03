@@ -65,12 +65,14 @@ class course_summary_exporter extends \core\external\exporter {
             $hasprogress = true;
         }
         $progress = floor($progress);
+        $progresscolor = self::get_course_progress_color($progress);
         $coursecategory = \core_course_category::get($this->data->category, MUST_EXIST, true);
         return array(
             'fullnamedisplay' => get_course_display_name_for_list($this->data),
             'viewurl' => (new moodle_url('/course/view.php', array('id' => $this->data->id)))->out(false),
             'courseimage' => $courseimage,
             'progress' => $progress,
+            'progresscolor' => $progresscolor,
             'hasprogress' => $hasprogress,
             'isfavourite' => $this->related['isfavourite'],
             'hidden' => boolval(get_user_preferences('block_myoverview_hidden_course_' . $this->data->id, 0)),
@@ -208,6 +210,22 @@ class course_summary_exporter extends \core\external\exporter {
      */
     public static function get_course_progress($course) {
         return \core_completion\progress::get_course_progress_percentage($course);
+    }
+
+    /**
+	 * Get the course progress bar fill color.
+	 *
+	 * @param int $courseprogress
+	 * @return string $progresscolor or hexcode $progresscolor
+	 */
+    public static function get_course_progress_color($courseprogress) {
+        $progresscolor = 'green';
+        if ($courseprogress <= 45) {
+            $progresscolor = 'red';
+		} elseif ($courseprogress <= 65) {
+            $progresscolor = 'yellow';
+		}
+        return $progresscolor;
     }
 
     /**
