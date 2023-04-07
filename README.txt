@@ -8,7 +8,7 @@
 # Team Members
   - Ernesto Sola-Thomas   schumae@clarkson.edu      schumae
   - Cameron Palmer        kampalme@clarkson.edu     PalmTrey
-  - Dalton Okeef          okeefedj@clarkson.edu     Dalton OKeefe
+  - Dalton Okeefe          okeefedj@clarkson.edu     Dalton OKeefe
   - Jacob Brothers        brothej@clarkson.edu      JakeTheMan32
   - Clayton Knewasser     knewascg@clarkson.edu     Clay
 
