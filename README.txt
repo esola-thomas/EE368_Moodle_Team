@@ -19,7 +19,14 @@
   - Course Completion Progress Bar (Medium) 
   - Bulk Enrolment (Hard/Optional)
   - Regex Question Answer Type (Hard/Optional)
-  - Automating Course Total Calculation (Hard/Optional)git 
+  - Automating Course Total Calculation (Hard/Optional)git
+
+# Test Plan
+   - Feature A: Force Users to Login (Developer: Ernesto / Tester: Dalton)
+   - Feature B: Strict Password Policy (Developer: Ernesto / Tester: Dalton)
+   - Feature C: Choosing how to resolve Category in Course Upload (Developer: Clayton / Tester: Ernesto)
+   - Feature D: Course Completion Progress Bar (Developer: Jacob / Tester: Cameron)
+   - Feature E: Regex Question Answer Type (Developer: Cameron & Dalton / Tester: Jacob & Clayton)
 
 Moodle - the world's open source learning platform
 
