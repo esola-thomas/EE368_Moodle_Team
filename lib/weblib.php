@@ -3661,6 +3661,9 @@ function print_password_policy() {
         if (!empty($CFG->minpasswordnonalphanum)) {
             $messages[] = get_string('informminpasswordnonalphanum', 'auth', $CFG->minpasswordnonalphanum);
         }
+        if (empty($CFG->preventpasswordusername)) {
+            $messages[] = get_string('informpreventpasswordusername', 'auth', $CFG->preventpasswordusername);
+        }
 
         // Fire any additional password policy functions from plugins.
         // Callbacks must return an array of message strings.
