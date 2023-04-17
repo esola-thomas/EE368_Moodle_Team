@@ -3,3 +3,6 @@
 .block_myoverview button#groupingdropdown + .dropdown-menu li:first-of-type.dropdown-divider:first-of-type {
     display: none;
 }
+meter::-webkit-meter-optimum-value { background: green; }
+meter::-webkit-meter-suboptimal-value { background: yellow; }
+meter::-webkit-meter-even-less-good-value { background: red; }
