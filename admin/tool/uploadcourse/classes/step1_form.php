@@ -74,9 +74,9 @@ class tool_uploadcourse_step1_form extends tool_uploadcourse_base_form {
 
         #feature 3
         $choices = array('ID', 'ID NUMBER');
-        $mform->addElement('select', 'categoryresolver', get_string('categoryresolver_help', 'tool_uploadcourse'), $choices);
+        $mform->addElement('select', 'categoryresolver', get_string('categoryresolver_selection', 'tool_uploadcourse'), $choices);
         $mform->setType('categoryresolver', PARAM_INT);
-        $mform->addHelpButton('categoryresolver', 'categoryresolver_help', 'tool_uploadcourse');
+        $mform->addHelpButton('categoryresolver', 'categoryresolver_selection', 'tool_uploadcourse');
 
 
 

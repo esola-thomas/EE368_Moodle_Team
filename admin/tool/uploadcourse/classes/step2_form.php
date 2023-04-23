@@ -49,6 +49,12 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         // Import options.
         $this->add_import_options();
 
+        #feature 3
+        $choices = array('ID', 'ID NUMBER');
+        $mform->addElement('select', 'categoryresolver', get_string('categoryresolver_selection', 'tool_uploadcourse'), $choices);
+        $mform->setType('categoryresolver', PARAM_INT);
+        $mform->addHelpButton('categoryresolver', 'categoryresolver_selection', 'tool_uploadcourse');
+
         // Course options.
         $mform->addElement('header', 'courseoptionshdr', get_string('courseprocess', 'tool_uploadcourse'));
         $mform->setExpanded('courseoptionshdr', true);
