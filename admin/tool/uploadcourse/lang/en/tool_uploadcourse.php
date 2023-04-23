@@ -76,6 +76,7 @@ $string['csvdelimiter_help'] = 'The character separating the series of data in e
 #feature 3
 $string['categoryresolver'] = 'Resolve Category By';
 $string['categoryresolver_help'] = 'The type of category used in the CSV';
+$string['category'] = "Category";
 
 $string['csvfileerror'] = 'There is something wrong with the format of the CSV file. Please check the number of headings and columns match, and that the separator and file encoding are correct. {$a}';
 $string['csvline'] = 'Line';

@@ -52,7 +52,7 @@ class tool_uploadcourse_tracker {
     /**
      * @var array columns to display.
      */
-    protected $columns = array('line', 'result', 'id', 'shortname', 'fullname', 'idnumber', 'status');
+    protected $columns = array('line', 'result', 'id', 'shortname', 'fullname', 'idnumber', 'category', 'status');
 
     /**
      * @var int row number.
@@ -154,7 +154,8 @@ class tool_uploadcourse_tracker {
                 isset($data['id']) ? $data['id'] : '',
                 isset($data['shortname']) ? $data['shortname'] : '',
                 isset($data['fullname']) ? $data['fullname'] : '',
-                isset($data['idnumber']) ? $data['idnumber'] : ''
+                isset($data['idnumber']) ? $data['idnumber'] : '',
+                isset($data['category']) ? $data['category'] : ''
             );
             $this->buffer->output(implode("\t", $message));
             if (!empty($status)) {
@@ -180,6 +181,7 @@ class tool_uploadcourse_tracker {
             echo html_writer::tag('td', isset($data['shortname']) ? $data['shortname'] : '', array('class' => 'c' . $ci++));
             echo html_writer::tag('td', isset($data['fullname']) ? $data['fullname'] : '', array('class' => 'c' . $ci++));
             echo html_writer::tag('td', isset($data['idnumber']) ? $data['idnumber'] : '', array('class' => 'c' . $ci++));
+            echo html_writer::tag('td', isset($data['category']) ? $data['category'] : '', array('class' => 'c' . $ci++));
             echo html_writer::tag('td', $status, array('class' => 'c' . $ci++));
             echo html_writer::end_tag('tr');
         }
@@ -212,6 +214,7 @@ class tool_uploadcourse_tracker {
             echo html_writer::tag('th', get_string('shortname'), array('class' => 'c' . $ci++, 'scope' => 'col'));
             echo html_writer::tag('th', get_string('fullname'), array('class' => 'c' . $ci++, 'scope' => 'col'));
             echo html_writer::tag('th', get_string('idnumber'), array('class' => 'c' . $ci++, 'scope' => 'col'));
+            echo html_writer::tag('th', get_string('category'), array('class' => 'c' . $ci++, 'scope' => 'col'));
             echo html_writer::tag('th', get_string('status'), array('class' => 'c' . $ci++, 'scope' => 'col'));
             echo html_writer::end_tag('tr');
         }

@@ -71,11 +71,14 @@ class tool_uploadcourse_step1_form extends tool_uploadcourse_base_form {
 
         $this->add_import_options();
 
-        #feature 3 drop down bar
+
+        #feature 3
         $choices = array('ID', 'ID NUMBER');
-        $mform->addElement('select', 'category', get_string('categoryresolver', 'tool_uploadcourse'), $choices);
-        $mform->setType('category', PARAM_INT);
-        $mform->addHelpButton('category', 'categoryresolver', 'tool_uploadcourse');
+        $mform->addElement('select', 'categoryresolver', get_string('categoryresolver_help', 'tool_uploadcourse'), $choices);
+        $mform->setType('categoryresolver', PARAM_INT);
+        $mform->addHelpButton('categoryresolver', 'categoryresolver_help', 'tool_uploadcourse');
+
+
 
         $mform->addElement('hidden', 'showpreview', 1);
         $mform->setType('showpreview', PARAM_INT);
