@@ -4982,7 +4982,9 @@ function check_password_policy($password, &$errmsg, $user = null) {
         if (!check_consecutive_identical_characters($password, $CFG->maxconsecutiveidentchars)) {
             $errmsg .= '<div>'. get_string('errormaxconsecutiveidentchars', 'auth', $CFG->maxconsecutiveidentchars) .'</div>';
         }
-
+        if ($user && ($password === $user->username || $password === $user->firstname || $password === $user->lastname)) {
+            $errmsg .= '<div>'. get_string('errorpasswordnamematch', 'auth') .'</div>';
+        }
         // Fire any additional password policy functions from plugins.
         // Plugin functions should output an error message string or empty string for success.
         $pluginsfunction = get_plugins_with_function('check_password_policy');
