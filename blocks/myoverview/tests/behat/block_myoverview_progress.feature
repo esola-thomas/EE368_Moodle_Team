@@ -42,3 +42,6 @@ Feature: Course overview block show users their progress on courses
     And I am on the "My courses" page
     And I click on "All" "button" in the "Course overview" "block"
     And I should see "100%" in the "Course overview" "block"
+    # And the progress bar in the "Course overview" block should be "green"
+    And I should see "green" in the "Course overview" "block"
+    #And I should see the completion bar in the "Course overview" block is green
