@@ -72,6 +72,13 @@ $string['createnew'] = 'Create new courses only, skip existing ones';
 $string['createorupdate'] = 'Create new courses, or update existing ones';
 $string['csvdelimiter'] = 'CSV separator';
 $string['csvdelimiter_help'] = 'The character separating the series of data in each record.';
+
+#feature 3
+$string['categoryresolver'] = 'categoryresolver';
+$string['categoryresolver_selection'] = 'Resolve Category By';
+$string['categoryresolver_selection_help'] = 'select the contents of the csv category column';
+$string['category'] = "Category";
+
 $string['csvfileerror'] = 'There is something wrong with the format of the CSV file. Please check the number of headings and columns match, and that the separator and file encoding are correct. {$a}';
 $string['csvline'] = 'Line';
 $string['defaultvalues'] = 'Default course values';
