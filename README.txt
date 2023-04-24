@@ -22,11 +22,11 @@
   - Automating Course Total Calculation (Hard/Optional)git
 
 # Test Plan
-   - Feature A: Force Users to Login (Developer: Ernesto / Tester: Dalton)
-   - Feature B: Strict Password Policy (Developer: Ernesto / Tester: Dalton)
+   - Feature A: Force Users to Login (Developer: Ernesto / Tester: Jacob)
+   - Feature B: Strict Password Policy (Developer: Ernesto / Tester: Jacob)
    - Feature C: Choosing how to resolve Category in Course Upload (Developer: Clayton / Tester: Ernesto)
    - Feature D: Course Completion Progress Bar (Developer: Jacob / Tester: Cameron)
-   - Feature E: Regex Question Answer Type (Developer: Cameron & Dalton / Tester: Jacob & Clayton)
+   - Feature E: Regex Question Answer Type (Developer: Cameron / Tester: Dalton)
 
 Moodle - the world's open source learning platform
 
