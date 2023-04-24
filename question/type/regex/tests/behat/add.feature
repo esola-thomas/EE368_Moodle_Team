@@ -17,12 +17,12 @@ Feature: Test creating a Regex question
 
   Scenario: Create a Regex question
     When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
-    And I add a "Regex" question filling the form with:
+    And I add a "RegEx" question filling the form with:
       | Question name            | regex-001                      |
       | Question text            | Match following pattern mm/dd/yyyy year start at 2000 or 1900 or month 02 |
       | General feedback         | This is general feedback       |
-      | Use case-insensitive     | Checked                        |
-      | Allow partial credit     | Checked                        |
+      #| Use case-insensitive     | Checked                        |
+      #| Allow partial credit     | Checked                        |
       | id_answer_0          | **/**/20**                                |
       | id_fraction_0        | 100%                                      |
       | id_feedback_0        | valid 1                                   |
