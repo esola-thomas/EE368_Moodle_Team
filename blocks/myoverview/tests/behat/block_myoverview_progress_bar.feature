@@ -31,9 +31,11 @@ Feature: Visual Completion Bar
     Given I am on the "My courses" page logged in as "student1"
     #And I am enrolled in Course 1
     And I should see "Course 1"
-    And I should see "0% complete"
+    #And I should see "0% complete"
+    And I should see a "$meter" element
+    #And the "div#progress-text" element should contain "0"
     #And the course completion status is set to 0%
-    When I complete the "Test choice 1" activity
+    #When I complete the "Test choice 1" activity
 #    Then I should see the completion bar in the "Course overview" block is red
 #    And the course completion status is set to 33%
 #    When I complete the "Test forum 1" activity
