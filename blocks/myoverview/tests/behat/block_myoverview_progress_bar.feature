@@ -15,7 +15,10 @@ Feature: Visual Completion Bar
       | activity | course | idnumber | name          | intro                   | timeopen      | timeclose     |
       | choice   | C1     | choice1  | Test choice 1 | Test choice description | ##yesterday## | ##tomorrow##  |
       | forum    | C1     | forum1   | Test forum 1  | Test forum description  | ##yesterday## | ##tomorrow##  |
-      | quiz     | C1     | Quiz_1   | Test forum 1  | Test forum description  | ##yesterday## | ##tomorrow##  |
+      | quiz     | C1     | Quiz_1   | Test quiz 1  | Test forum description  | ##yesterday## | ##tomorrow##  |
+      | quiz     | C1     | Quiz_2   | Test quiz 2  | Test forum description  | ##yesterday## | ##tomorrow##  |
+      | quiz     | C1     | Quiz_3   | Test quiz 3  | Test forum description  | ##yesterday## | ##tomorrow##  |
+      | quiz     | C1     | Quiz_4   | Test quiz 4  | Test forum description  | ##yesterday## | ##tomorrow##  |
       #| assigment| C1     | assig_1  | Test forum 1  | Test forum description  | ##yesterday## | ##tomorrow##  |
       #| assigment| C1     | assig_2  | Test forum 1  | Test forum description  | ##yesterday## | ##tomorrow##  |
     #And I add a "hw1" to section "1" of "C1"
@@ -26,7 +29,6 @@ Feature: Visual Completion Bar
       | student1 | C1 | student         |
   Scenario: Visual Completion Bar changes color as course is completed
     Given I am on the "My courses" page logged in as "student1"
-    And I click on "Course 1"
     #And I am enrolled in Course 1
     And I should see "Course 1"
     And I should see "0% complete"
