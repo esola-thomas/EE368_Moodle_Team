@@ -7,7 +7,7 @@ https://github.com/esola-thomas/EE368_Moodle_Team
     - Follow the moodle installation instructions on your webbrowser
     
 # Known Bugs
-    - Feature 4 does not have a working behat test, it was not possible to find a way to check the collor of the meter bar from behat, the test was done visually.
+    - Feature 4 has a unique citustion when it comes down to behat testing. For the progress bar to appear the course and assigments need tk be created by the behat test. The given statement wont create a course that displays a progress bar. 
 
 # Implementetions (5 Features)
     - Feature 1: Force User to Login
